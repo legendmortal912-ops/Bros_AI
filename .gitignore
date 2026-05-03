@@ -1,0 +1,9 @@
+# Secrets
+**/.env
+.env
+
+# Node/Python dependencies (prevents the 8,000+ file upload)
+node_modules/
+__pycache__/
+venv/
+env/

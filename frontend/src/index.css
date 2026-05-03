@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #07030f;
+  overflow-x: hidden;
+}
+
+/* Custom glow utility */
+.glow-violet {
+  box-shadow: 0 0 60px rgba(139, 92, 246, 0.3);
+}
+
+/* Animated gradient border */
+@keyframes border-spin {
+  to { --angle: 360deg; }
+}
+
+@keyframes elegant-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.elegant-spin {
+  animation: elegant-spin 1s linear infinite;
+}
+
+@keyframes elegant-pulse-dot {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.elegant-pulse-dot {
+  animation: elegant-pulse-dot 1s ease-in-out infinite;
+}
+

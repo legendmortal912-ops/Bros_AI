@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #07030f;
+  overflow-x: hidden;
+}
+
+/* Custom glow utility */
+.glow-violet {
+  box-shadow: 0 0 60px rgba(139, 92, 246, 0.3);
+}
+
+/* Animated gradient border */
+@keyframes border-spin {
+  to { --angle: 360deg; }
+}
+
